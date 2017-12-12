@@ -13,7 +13,7 @@ import expressValidator = require('express-validator');
 /**
  * ---------------------------------- Controllers (route handlers).
  */
-const controllers = require('auto-loader').load(__dirname + '/controllers');
+const api = require('auto-loader').load(__dirname + '/api');
 /**
  * ---------------------------------- Load environment variables from .env file.
  */
