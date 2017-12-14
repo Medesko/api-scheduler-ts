@@ -10,7 +10,7 @@ export = {
      * @param res
      * @param next
      */
-    find: (req: Request, res: Response, next: NextFunction) => {
+    findAll: (req: Request, res: Response, next: NextFunction) => {
         Categories.find().then((categories) => {
             res.status(200).json(categories);
         }).catch((next));

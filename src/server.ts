@@ -71,6 +71,10 @@ router.options('*', cors(corsOptions));
 /**
  * ---------------------------------- api routing.
  */
+router.route('/categories')
+.post(api.categories.create)
+.get(api.categories.findAll);
+
 
 router.route('/*')
 .get(function (req, res) {
